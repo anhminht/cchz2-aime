@@ -1,0 +1,16 @@
+{
+  "name": "cchz2-aime",
+  "version": "2.0.0",
+  "private": true,
+  "description": "CeceHanzi v2 — static PWA + Cloudflare Workers (D1 + R2) for Simplified Chinese learning.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "d1:init": "wrangler d1 create cchz2-db && wrangler d1 execute cchz2-db --remote --file migrations/0001_init.sql",
+    "build": "python3 scripts/build_data_json.py",
+    "preflight": "python3 scripts/preflight.py"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  }
+}

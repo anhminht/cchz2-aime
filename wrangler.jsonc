@@ -1,0 +1,23 @@
+{
+  "name": "cchz2-aime",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "single-page-application"
+  },
+  "r2_buckets": [
+    {
+      "binding": "VAULT_IMAGES",
+      "bucket_name": "cchz2-vault-images"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cchz2-db",
+      "database_id": "TO_BE_SET_AFTER_D1_CREATE"
+    }
+  ],
+  "migrations_dir": "./migrations",
+  "vars": {}
+}
